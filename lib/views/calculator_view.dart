@@ -38,6 +38,8 @@ class CalculatorView extends StatelessWidget {
                 borderSide: BorderSide(color: Colors.black, width: 3.0),
                 borderRadius: BorderRadius.circular(10.0),
               ),
+              hintText: "Enater b Number",
+              hintStyle: TextStyle(color: Colors.white),
             ),
           ),
         ],
