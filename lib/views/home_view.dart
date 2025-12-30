@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learn/views/calculator_view.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -9,17 +10,9 @@ class HomeView extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Learn',
 
-      home: Container(
-        color: Colors.deepOrange,
-        child: const Center(
-          child: Text(
-            "Hello World",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 40,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
+      home: SafeArea(
+        child: Scaffold(
+          body: Container(color: Colors.deepOrange, child: CalculatorView()),
         ),
       ),
     );
